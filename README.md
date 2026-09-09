@@ -1,4 +1,4 @@
-# 💻 Exercícios de Front-End — Prof. Rafael
+# 💻 Exercícios de Front-End SENAI — Prof. Rafael
 
 Bem-vindo(a) ao repositório! Este espaço é dedicado ao armazenamento, organização e acompanhamento de todos os exercícios e projetos desenvolvidos durante as aulas de **Desenvolvimento Front-End** com o professor **Rafael**.
 
