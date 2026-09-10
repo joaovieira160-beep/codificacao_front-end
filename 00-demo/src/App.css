@@ -3,6 +3,8 @@ h1{
   padding: 25px;
   color: rgb(62, 124, 126);
   text-align: center;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ text-decoration: underline;
 }
 
 .cont-app{
@@ -14,3 +16,10 @@ ul{
   padding: 25px;
 }
 
+h2{
+  color: rgb(81, 95, 179);
+  text-decoration:solid;
+  background-color: rgba(220, 221, 221, 0.568);
+  padding: 3px;
+  display: inline-block;
+}
