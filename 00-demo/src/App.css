@@ -19,7 +19,8 @@ ul{
 h2{
   color: rgb(81, 95, 179);
   text-decoration:solid;
-  background-color: rgba(220, 221, 221, 0.568);
+  background-color: 
+rgba(220, 221, 221, 0.568);
   padding: 3px;
   display: inline-block;
 }
