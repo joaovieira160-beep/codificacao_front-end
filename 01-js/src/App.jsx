@@ -2,7 +2,157 @@ import './App.css'
 
 function App() {
 
-      function 
+  function relatorios(){
+    let relatoriosPF = 40
+    let relatoriosPJ = 33
+    let TempoRelatorioPF = 12
+    let TempoRelatorioPJ = 42
+    let totalPF = 2350.00
+    let totalPJ = 8900.00
+
+    let totalRelatorios = relatoriosPF + relatoriosPJ
+    let tempoTotalTrabalho = TempoRelatorioPF +TempoRelatorioPJ
+    let ValorTotal = totalPF + totalPJ
+    let MediaValorPF = totalPF / relatoriosPF
+    let MediaValorPJ = totalPJ / relatoriosPJ
+    let MediaTempoPF = TempoRelatorioPF /relatoriosPF
+    let MediaTempoPJ = TempoRelatorioPJ /relatoriosPJ
+
+
+
+alert(`Relatorios para PF: ${relatoriosPF}
+      Relatorios para PJ: ${relatoriosPJ}
+      total de relatorios: ${totalRelatorios}
+
+      Tempo para elaborar relatorios PF: ${TempoRelatorioPF}
+      Tempo para elaborar relatorios PJ: ${TempoRelatorioPJ}
+      Tempo total de trabalho: ${tempoTotalTrabalho}
+
+      Valor total recebido de PF: R$${totalPF.toFixed(2)}
+      Valor total recebido de PJ: R$${totalPJ.toFixed(2)}
+      Valor total recebido: R$${ValorTotal.toFixed(2)}
+      
+      Media de valor por relatorio PF: R$${MediaValorPF.toFixed(2)}
+      Media de valor por relatorio PJ: R$${MediaValorPJ.toFixed(2)}
+
+      Media de tempo por relatorio PF: R$${MediaTempoPF.toFixed(2)}
+      Media de tempo por relatorio PJ: R$${MediaTempoPJ.toFixed(2)}
+      `)
+
+
+  }
+  
+function freela(){
+  let pagamentoDev = 500
+  let recebeInicialmente = 500
+
+  let Porhora = Number(prompt("quantas horas sao estimadas para o desenvolvimento?:"))
+
+  let cobrar = recebeInicialmente + (350 * Porhora)
+  let lucro = cobrar - pagamentoDev
+
+
+  alert(`O preço estimado para se cobrar do cliente é : R$${cobrar}\nSeu lucro total sera R$${lucro}`)
+
+}
+
+  function IA(){
+    let valorInicial = 5
+  
+    let caracteres = Number(prompt("quantos caracteres o prompt tem?"))
+
+    let tokensTotal = valorInicial + caracteres
+
+    alert(`Voce gastará ${tokensTotal} tokens`)
+  }
+
+  function jares(){
+    let custocaminhao = 450
+    let valorjare = 90
+    let lucroPcaminhao = (valorjare * 50) - custocaminhao
+
+    let Qcaminhoes = Number(prompt("quantos caminhoes foram pedidos?:"))
+
+    let lucrototal = lucroPcaminhao * Qcaminhoes
+    
+
+    alert(`o lucro seria de R$${lucrototal}`)
+
+
+  }
+
+  function churrascaria(){
+let totalPessoas = Number(prompt("quantas pessoas irao comer?"))
+
+let carne = 0.5
+let cerveja =1
+let agua = 0.5
+let refri = 0.2
+
+  carne = carne * totalPessoas
+  cerveja = cerveja * totalPessoas
+  agua = agua * totalPessoas
+  refri = refri * totalPessoas
+
+
+alert(`o esperado a se pedir seria :\nCarne: ${carne}Kg\nCerveja:${cerveja}L\nAgua:${agua}L\nRefri:${refri}L`)
+  }
+
+  function Racao(){
+    let gramas = Number(prompt("quantas gramas voce vai comprar "))
+
+    let resultado = (gramas / 1000) * 10
+
+    alert(`O preço sera de R$${resultado.toFixed(2)}`)
+  }
+
+  function PoliticaPrecos(){
+
+let valorCompra = Number(prompt("quantos R$ voce pagou no item?:"))
+
+let venderPor = valorCompra * 3
+
+alert(`o valor que o item deve ser revendido sera de R$${venderPor.toFixed(2)}`)
+
+}
+
+function poupanca(){
+
+  let salario = Number(prompt("qual o seu salariio mensal?: "))
+
+  let gastos = {
+  moradia : 0,
+  agua : 0,
+  luz : 0,
+  internet : 0,
+  gasolina : 0,
+  streaming : 0,
+  telefone: 0,
+  outros : 0,
+  total: 0
+}
+gastos.moradia = Number(prompt("quanto gasta em moradia?:"))
+gastos.total += gastos.moradia
+
+gastos.agua = Number(prompt("quanto gasta em agua?:"))
+gastos.total += gastos.agua
+gastos.luz = Number(prompt("quanto gasta em luz?:"))
+gastos.total += gastos.luz
+gastos.internet = Number(prompt("quanto gasta em internet?:"))
+gastos.total += gastos.internet
+gastos.gasolina = Number(prompt("quanto gasta em gasolina?:"))
+gastos.total += gastos.gasolina
+gastos.streaming = Number(prompt("quanto gasta em streaming?:"))
+gastos.total += gastos.streaming
+gastos.telefone= Number(prompt("quanto gasta em telefone?:"))
+gastos.total += gastos.telefone
+gastos.outros = Number(prompt("quanto gasta em outros?:"))
+gastos.total += gastos.outros
+
+  let sobra = salario - gastos.total 
+
+  alert(`O seu salario final com os pagamentos e gastos descontados é R$${sobra.toFixed(2)}`)
+}
 
       function PlanejarS(){
         let bombasF = 7
@@ -164,13 +314,26 @@ alert(`após a venda de ${Qvendida} laranjas, sobraram ${Qfinal}`)
       <button onClick={faturamento}>ver faturamento</button>
       <button onClick={mensalBarco}>faturamento barco</button>
       <button onClick={PlanejarS}>planejamento de shows</button>
+      <br />
+      <button onClick={poupanca}>Poupança</button>
+      <button onClick={PoliticaPrecos}>Politica de preços</button>
+      <button onClick={Racao}>preço da raçao</button>
 
+      <br />
+      <button onClick={churrascaria}>churrascaria</button>
+      <button onClick={jares}>Jares</button>
+      <button onClick={IA}>IA</button>
+      <br />
+      <button onClick={freela}>freela</button>
+      <button onClick={relatorios}>relatorios</button>
       <hr />
       
 
 
       <button onClick={testar}>surpresa</button>
       <button onClick={calcularMedia}>Media</button>
+      
+
       </div>
   )
 }
