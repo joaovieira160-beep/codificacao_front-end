@@ -22,14 +22,16 @@ function Ferias_juca() {
         let desconto = valorBruto * 25/100
         let multa = 150
         let totalPagar = valorBruto - desconto + multa;
-        setResultado(totalPagar)
+        setResultado(`O total da sua estadia sera de R$${totalPagar}`)
     }
 
   return (
     <div className='pousada'>
         <h2>Pousada</h2>
-        <button onClick={contar_dias}>Pousada</button>
+        <button className="botao" onClick={contar_dias}>Pousada</button>
+        <br />
         {Resultado}
+        <hr />
     </div>
   )
 }

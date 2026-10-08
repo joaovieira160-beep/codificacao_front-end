@@ -24,8 +24,10 @@ function Votar() {
   return (
     <div className="votos">
         <h2>Votos</h2>
-        <button onClick={Votacao}>Votar!</button>
+        <button className="botao" onClick={Votacao}>Votar!</button>
+        <br />
         {Votar}
+        <hr />
     </div>
   )
 }

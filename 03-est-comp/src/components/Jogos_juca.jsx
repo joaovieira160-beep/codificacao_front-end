@@ -7,21 +7,23 @@ const[Resultado,setResultado] = useState(0)
     let pontos = Number(prompt("quantos pontos voce fez?"))
 
     if(pontos <= 10){
-        setResultado("Deu ruim!")
+        setResultado(`Apenas ${pontos}? Deu ruim!`)
     }else if(pontos <=100){
-        setResultado("Bom! Mas pode melhorar!")
+        setResultado(`${pontos} pontos? Bom! Mas pode melhorar!`)
     }else if(pontos <= 200){
-        setResultado("Supimpa!!")
+        setResultado(`${pontos} pontos? Supimpa!!`)
     }else{
-        setResultado("incrivel!")
+        setResultado(`${pontos} pontos? incrivel!`)
     }
 }
 
   return (
     <div className='jogo'>
         <h2>Jogo do Mano Juka</h2>
-        <button onClick={classificar}>Classificar</button>
+        <button className="botao" onClick={classificar}>Classificar</button>
+        <br />
         {Resultado}
+        <hr />
     </div>
   )
 }
