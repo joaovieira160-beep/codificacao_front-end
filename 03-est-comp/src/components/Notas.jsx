@@ -28,7 +28,7 @@ setSaida(`Sua media é:${media.toFixed(2)}, Parabens voce passou!`)
         <button className="botao" onClick={CalcularMedia}>Calcule</button>
         <br />
         {Saida}
-        <hr />
+      
     </div>
   )
 }

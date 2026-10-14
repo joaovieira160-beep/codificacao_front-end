@@ -26,7 +26,7 @@ function Altura() {
         <button className="botao" onClick={calcular_altura}>Calcular</button>
         <br />
         {resultado}
-        <hr />
+      
     </div>
   )
 }

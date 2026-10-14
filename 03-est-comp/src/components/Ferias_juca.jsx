@@ -31,7 +31,7 @@ function Ferias_juca() {
         <button className="botao" onClick={contar_dias}>Pousada</button>
         <br />
         {Resultado}
-        <hr />
+       
     </div>
   )
 }

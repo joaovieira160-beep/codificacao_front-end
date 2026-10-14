@@ -27,7 +27,7 @@ function Macas() {
         <button className="botao" onClick={contasMacas}>Maças</button>
         <br />
         {Resultado}
-        <hr />
+      
     </div>
   )
 }

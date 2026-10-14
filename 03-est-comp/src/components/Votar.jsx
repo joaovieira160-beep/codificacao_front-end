@@ -27,7 +27,7 @@ function Votar() {
         <button className="botao" onClick={Votacao}>Votar!</button>
         <br />
         {Votar}
-        <hr />
+        
     </div>
   )
 }

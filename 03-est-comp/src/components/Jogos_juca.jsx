@@ -23,7 +23,7 @@ const[Resultado,setResultado] = useState(0)
         <button className="botao" onClick={classificar}>Classificar</button>
         <br />
         {Resultado}
-        <hr />
+        
     </div>
   )
 }

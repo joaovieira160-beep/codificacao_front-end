@@ -27,8 +27,7 @@ const[Resultado,setResultado] = useState(0)
         <button className="botao" onClick={Palestra_local}>Confira aqui!</button>
         <br />
         {Resultado}
-        <hr />
-
+  
     </div>
   )
 }

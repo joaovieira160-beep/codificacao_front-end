@@ -23,7 +23,7 @@ if(senhaFalada == senha){
     <button className="botao" onClick={Senha_certa}>Digite aqui</button>
     <br />
     {Senha}
-    <hr />
+    
     </div>
   )
 }

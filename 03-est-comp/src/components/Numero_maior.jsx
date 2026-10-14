@@ -26,7 +26,7 @@ function Numero_maior() {
         <button className="botao" onClick={MaiorNumero}>Numeros</button>
         <br />
         {Saida}
-        <hr />
+       
     </div>
   )
 }

@@ -30,7 +30,7 @@ function Placa() {
         <button className="botao" onClick={Placa}>Digito</button>
         <br />
         {Saida}
-        <hr />
+     
     </div>
   )
 }
