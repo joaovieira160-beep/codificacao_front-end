@@ -2,7 +2,7 @@ import { useState } from "react"
 
 function Capitão_Ganso() {
 
-const[Resultado, setResultado] = useState("")
+const[Resultado, setResultado] = useState(0)
 
 function contar_marujos(){
     let marujos = Number(prompt("Quantos marujos estarao a bordo??"))
@@ -32,7 +32,7 @@ function contar_marujos(){
   return (
     <div className="ganso">
         <h2>Capitão Ganso</h2>
-        <button onClick={contar_marujos}>Calcular</button>
+        <button className="botao"  onClick={contar_marujos}>Calcular</button>
         <br />
         {Resultado}
         </div>

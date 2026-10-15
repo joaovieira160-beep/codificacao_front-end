@@ -18,7 +18,7 @@ function Magica_fumaca() {
   return (
     <div className="fumaca">
         <h2>Fumaça magica</h2>
-        <button onClick={Seguranca}>Segurança</button>
+        <button className="botao"  onClick={Seguranca}>Segurança</button>
         <br />
         {Resultado}
     </div>

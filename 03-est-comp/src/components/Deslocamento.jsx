@@ -27,7 +27,7 @@ function Deslocamento() {
   return (
     <div>
         <h2>Deslocamento do mago!</h2>
-        <button onClick={poderaIr}>ver deslocamento</button>
+        <button className="botao"  onClick={poderaIr}>ver deslocamento</button>
         <br />
         {Resultado}
     </div>

@@ -2,7 +2,7 @@ import { useState } from "react"
 
 function Entrada_plco() {
 
-    const[Resultado, setResultado] = useState("")
+    const[Resultado, setResultado] = useState(0)
 
     function Verificacoes(){
         let somFuncionando = prompt("O som esta funcionando?")
@@ -33,7 +33,7 @@ function Entrada_plco() {
   return (
     <div>
         <h2>Entrando no Palco!</h2>
-        <button onClick={Verificacoes}>Verificaçao</button>
+        <button className="botao"  onClick={Verificacoes}>Verificaçao</button>
         <br />
         {Resultado}
     </div>

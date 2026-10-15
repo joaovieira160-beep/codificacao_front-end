@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 function Transporte_interno() {
-    const[Resultado, setResultado] = useState("")
+    const[Resultado, setResultado] = useState(0)
 
     function Verificacoes(){
          let emManutencao = prompt("O parque esta em manutençao?")
@@ -33,7 +33,7 @@ function Transporte_interno() {
   return (
     <div>
         <h2>Transporte interno </h2>
-        <button onClick={Verificacoes}>Verificar</button>
+        <button className="botao"  onClick={Verificacoes}>Verificar</button>
         <br />
         {Resultado}
     </div>

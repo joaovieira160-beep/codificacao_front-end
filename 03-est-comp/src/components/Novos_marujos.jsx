@@ -2,7 +2,7 @@ import { useState } from "react"
 
 function Novos_marujos() {
 
-    const[Resultado, setResultado] = useState("")
+    const[Resultado, setResultado] = useState(0)
 
     function Contratar_novos(){
         let nadar = prompt("o canditado sabe nadar?")
@@ -34,7 +34,7 @@ function Novos_marujos() {
   return (
     <div className="Novos_marujos">
         <h2>Contratar novos marujos</h2>
-        <button onClick={Contratar_novos}>Ver curriculo</button>
+        <button className="botao"  onClick={Contratar_novos}>Ver curriculo</button>
         <br />
         {Resultado}
     </div>

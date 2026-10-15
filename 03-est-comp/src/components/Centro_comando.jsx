@@ -33,7 +33,7 @@ function Verificar(){
   return (
      <div>
         <h2>Centro de comandos</h2>
-        <button onClick={Verificar}>verificar</button>
+        <button className="botao"  onClick={Verificar}>verificar</button>
         <br />
         {Resultado}
     </div>
