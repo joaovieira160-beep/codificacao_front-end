@@ -1,0 +1,24 @@
+import React from 'react'
+
+function Oração_Backend() {
+  return (
+    <div>
+        <h2>Oraçao do Back-end</h2>
+        <hr />
+        <h3>Nosso código que está no servidor,
+            
+            Santificado seja o teu endpoint,
+            Venha a nós o teu JSON,
+            Seja feita tua lógica,
+            Assim na API como no banco.
+            O token nosso de cada dia nos dai hoje,
+            Perdoai nossas queries mal otimizadas,
+            Assim como nós perdoamos quem nos envia POST sem body.
+            E não nos deixes cair em loops infinitos,
+            Mas livrai-nos do downtime.
+            Amém, amém, status 200.</h3>
+    </div>
+  )
+}
+
+export default Oração_Backend
